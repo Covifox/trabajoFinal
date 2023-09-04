@@ -1,0 +1,12 @@
+{
+  "name": "trabajoFin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["Trabajo Final"],
+  "author": "Victor Hugo Flores Medrano",
+  "license": "ISC"
+}

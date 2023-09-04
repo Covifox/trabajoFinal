@@ -1,0 +1,38 @@
+### Para crear un usuario POST ‘/usuarios’
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+ {
+    "cedula_identidad": "000000001",
+    "nombre": "Ramiro",
+    "primer_apellido": "Fuentes",
+    "segundo_apellido": "Ramos",
+    "fecha_nacimiento": "03/10/2003"
+  }
+
+### Para listar a todos lo usuarios: GET ‘/usuarios’
+GET http://localhost:3000/usuarios
+
+### Para listar un usuario en especifico GET ‘/ usuarios/:id_usuario’
+GET http://localhost:3000/usuarios/3
+
+### Para actualizar los datos de un usuario: PUT ‘/usuarios/:id_usuario’
+PUT http://localhost:3000/usuarios/6
+Content-Type: application/json
+
+ {
+    "cedula_identidad": "0000003",
+    "nombre": "Ramiro",
+    "primer_apellido": "Perez",
+    "segundo_apellido": "Ramos",
+    "fecha_nacimiento": "03/10/2003"
+  }
+
+### Para eliminar a un usuario: DELETE ‘usuarios/:id_usuario’
+DELETE  http://localhost:3000/usuarios/6
+
+### Para mostrar el promedio de edades de los usuarios: GET ‘/usuarios/promedio-edad’
+GET  http://localhost:3000/usuarios/promedioedad
+
+### Para mostrar la version del api rest: GET ‘/estado’
+GET  http://localhost:3000/estado
